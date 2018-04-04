@@ -1,0 +1,31 @@
+{
+  "name": "phaser3-typescript",
+  "version": "0.0.1",
+  "description": "Boilerplate for Phaser 3 in Typescript",
+  "keywords": [
+    "Phaser",
+    "Phaser 3",
+    "Phaser3",
+    "TypeScript",
+    "Webpack"
+  ],
+  "devDependencies": {
+    "expose-loader": "0.7.4",
+    "ts-loader": "4.0.1",
+    "typescript": "2.7.2",
+    "webpack": "4.0.1",
+    "webpack-cli": "2.0.10",
+    "webpack-dev-server": "3.1.0"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^1.0.0-alpha.33",
+    "@capacitor/core": "^1.0.0-alpha.33",
+    "@capacitor/ios": "^1.0.0-alpha.33",
+    "phaser": "3.3.0"
+  },
+  "scripts": {
+    "dev": "webpack && webpack-dev-server --mode development",
+    "prod": "webpack && webpack-dev-server --mode production",
+    "build": "webpack --mode production && cp src/index.html www/index.html && cp -fR assets www && npx cap copy"
+  }
+}
