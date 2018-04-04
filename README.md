@@ -8,7 +8,7 @@ Inspiration/configuration from:
 - https://github.com/digitsensitive/phaser3-typescript
 - https://github.com/TooManyCaptains/TooManyCaptains
 
-## Installation
+## Install
 
 ```
 npm install
@@ -18,6 +18,20 @@ npm install
 npx cap init
 ```
 
+## Develop
+
+```
+npm run dev
+```
+
+## Build
+
+```
+npm run build
+```
+
+## Add Native Platforms
+
 ```
 npx cap add ios
 ```
@@ -26,19 +40,7 @@ npx cap add ios
 npx cap add android
 ```
 
-## Development
-
-```
-npm run dev
-```
-
-## Building
-
-```
-npm run build
-```
-
-## Running
+## Run
 
 ```
 npm run build
