@@ -24,8 +24,9 @@
     "phaser": "3.3.0"
   },
   "scripts": {
-    "dev": "webpack && webpack-dev-server --mode development",
-    "prod": "webpack && webpack-dev-server --mode production",
-    "build": "webpack --mode production && cp src/index.html www/index.html && cp -fR assets www && cp src/service-worker.js www/service-worker.js && cp src/manifest.json www/manifest.json && cp sw-toolbox.js www/sw-toolbox.js && npx cap copy"
+    "copy": "cp src/index.html www/index.html && cp -fR assets www && cp src/service-worker.js www/service-worker.js && cp src/manifest.json www/manifest.json && cp sw-toolbox.js www/sw-toolbox.js",
+    "dev": "webpack && npm run copy && webpack-dev-server --mode development",
+    "prod": "webpack && npm run copy && webpack-dev-server --mode production",
+    "build": "webpack --mode production && npm run copy && npx cap copy"
   }
 }
