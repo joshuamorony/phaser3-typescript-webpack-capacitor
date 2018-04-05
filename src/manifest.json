@@ -1,0 +1,13 @@
+{
+  "name": "My Game",
+  "short_name": "My Game",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/images/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#000",
+  "theme_color": "#000"
+}

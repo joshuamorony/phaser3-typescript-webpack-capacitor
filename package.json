@@ -26,6 +26,6 @@
   "scripts": {
     "dev": "webpack && webpack-dev-server --mode development",
     "prod": "webpack && webpack-dev-server --mode production",
-    "build": "webpack --mode production && cp src/index.html www/index.html && cp -fR assets www && npx cap copy"
+    "build": "webpack --mode production && cp src/index.html www/index.html && cp -fR assets www && cp src/service-worker.js www/service-worker.js && cp src/manifest.json www/manifest.json && cp sw-toolbox.js www/sw-toolbox.js && npx cap copy"
   }
 }
