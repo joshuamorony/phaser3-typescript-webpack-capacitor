@@ -15,13 +15,13 @@
     "typescript": "3.0.3",
     "webpack": "4.19.1",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.8"
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "@capacitor/cli": "^1.0.0-beta.7",
+    "@capacitor/cli": "^1.1.1",
     "@capacitor/core": "^1.0.0-beta.7",
     "@capacitor/ios": "^1.0.0-beta.7",
-    "phaser": "3.13.0"
+    "phaser": "^3.18.1"
   },
   "scripts": {
     "copy": "cp src/index.html www/index.html && cp -fR assets www && cp src/service-worker.js www/service-worker.js && cp src/manifest.json www/manifest.json && cp sw-toolbox.js www/sw-toolbox.js",
