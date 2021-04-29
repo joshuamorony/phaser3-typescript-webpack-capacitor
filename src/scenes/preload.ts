@@ -8,10 +8,12 @@ export class PreloadScene extends Phaser.Scene {
 	    this.load.image('ground', 'assets/sprites/platform.png');
 	    this.load.spritesheet('dude', 'assets/sprites/dude.png', { frameWidth: 32, frameHeight: 48 });
 
-	}	
+	}
 
 	create(): void {
-		this.scene.start('GameTitle');
+		var savedName = parent.localStorage.getItem('mc-name');
+		if (!savedName) this.scene.start('EnterName');
+		else this.scene.start('GameInterface', { name: savedName });
 	}
 
 }

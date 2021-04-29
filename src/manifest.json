@@ -1,6 +1,6 @@
 {
-  "name": "My Game",
-  "short_name": "My Game",
+  "name": "MagicalCards",
+  "short_name": "MagicalCards",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

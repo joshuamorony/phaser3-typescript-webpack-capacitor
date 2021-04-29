@@ -1,30 +1,33 @@
 {
-  "name": "phaser3-typescript",
+  "name": "magical-cards",
   "version": "0.0.1",
-  "description": "Boilerplate for Phaser 3 in Typescript",
+  "description": "MagicalCards with Phaser 3 in Typescript",
   "keywords": [
-    "Phaser",
-    "Phaser 3",
-    "Phaser3",
-    "TypeScript",
-    "Webpack"
+    "MagicalCards",
+    "Landlord",
+    "Game",
+    "TypeScript"
   ],
   "devDependencies": {
-    "expose-loader": "0.7.5",
-    "ts-loader": "5.1.1",
-    "typescript": "3.0.3",
-    "webpack": "4.19.1",
-    "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.8"
+    "@webpack-cli/serve": "^1.3.1",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@capacitor/cli": "^1.0.0-beta.7",
-    "@capacitor/core": "^1.0.0-beta.7",
-    "@capacitor/ios": "^1.0.0-beta.7",
-    "phaser": "3.13.0"
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7",
+    "@capacitor/ios": "^2.4.7",
+    "axios": "^0.21.1",
+    "expose-loader": "^2.0.0",
+    "phaser": "^3.54.0",
+    "socket.io-client": "^4.0.1"
   },
   "scripts": {
     "copy": "cp src/index.html www/index.html && cp -fR assets www && cp src/service-worker.js www/service-worker.js && cp src/manifest.json www/manifest.json && cp sw-toolbox.js www/sw-toolbox.js",
+    "serve": "webpack && webpack serve --mode development",
     "dev": "webpack && npm run copy && webpack-dev-server --mode development",
     "prod": "webpack && npm run copy && webpack-dev-server --mode production",
     "build": "webpack --mode production && npm run copy && npx cap copy"

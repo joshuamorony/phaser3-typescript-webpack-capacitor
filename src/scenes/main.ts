@@ -1,5 +1,5 @@
 import Player from '../objects/player';
-import { WORLD_WIDTH, WORLD_HEIGHT } from '../constants';
+import { WIDTH, HEIGHT } from '../constants';
 
 export class MainScene extends Phaser.Scene {
 
@@ -8,7 +8,7 @@ export class MainScene extends Phaser.Scene {
 
 	create(): void {
 
-		this.player = new Player(WORLD_WIDTH/2, 100, this);
+		this.player = new Player(WIDTH/2, 100, this);
 		this.addPlatforms();
 
 	}
@@ -23,7 +23,7 @@ export class MainScene extends Phaser.Scene {
 
 		this.platforms = this.physics.add.staticGroup();
 
-		this.platforms.create(WORLD_WIDTH / 2, WORLD_HEIGHT, 'ground');
+		this.platforms.create(WIDTH / 2, HEIGHT, 'ground');
 		this.physics.add.collider(this.player.entity, this.platforms, null, null, this);
 
 	}

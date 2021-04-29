@@ -1,0 +1,6 @@
+{
+  "appId": "com.legendword.magicalcards",
+  "appName": "MagicalCards",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
