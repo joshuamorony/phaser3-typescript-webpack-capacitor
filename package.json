@@ -11,10 +11,10 @@
   ],
   "devDependencies": {
     "expose-loader": "0.7.5",
-    "ts-loader": "5.1.1",
+    "ts-loader": "9.4.2",
     "typescript": "3.0.3",
-    "webpack": "4.19.1",
-    "webpack-cli": "3.1.0",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.1",
     "webpack-dev-server": "3.1.8"
   },
   "dependencies": {
